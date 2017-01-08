@@ -35,7 +35,7 @@ public class TestTakingActivity extends AppCompatActivity {
 
 	private void startFullTestTimer() {
 		TextView fullTestTimerTextView = (TextView) findViewById(R.id.fullTestTimer);
-		fullTestTimer = new TestCountdownTimer(60 * 1000, 1000, fullTestTimerTextView);
+		fullTestTimer = new TestCountdownTimer(120 * 60 * 1000 + 5 * 1000, 1000, fullTestTimerTextView);
 		fullTestTimer.start();
 	}
 

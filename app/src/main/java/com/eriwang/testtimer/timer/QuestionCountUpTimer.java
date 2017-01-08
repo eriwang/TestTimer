@@ -27,7 +27,9 @@ public class QuestionCountUpTimer extends CountDownTimer {
 	}
 
 	private String millisToTimeString(long ms) {
-		long seconds = TimeUnit.MILLISECONDS.toSeconds(ms) + 1;
-		return String.valueOf(seconds);
+		long hours = TimeUnit.MILLISECONDS.toHours(ms);
+		long minutes = TimeUnit.MILLISECONDS.toMinutes(ms % TimeUnit.HOURS.toMillis(1));
+		long seconds = TimeUnit.MILLISECONDS.toSeconds(ms % TimeUnit.MINUTES.toMillis(1));
+		return String.format("%1$02d:%2$02d:%3$02d", hours, minutes, seconds);
 	}
 }
