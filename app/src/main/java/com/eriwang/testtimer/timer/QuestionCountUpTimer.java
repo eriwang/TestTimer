@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 public class QuestionCountUpTimer extends CountDownTimer {
 	private TextView timerTextView;
 	private long timerLength;
+	private long timeElapsed;
 
 	public QuestionCountUpTimer(long _timerLength, long countDownInterval, TextView _timerTextView) {
 		super(_timerLength, countDownInterval);
@@ -17,13 +18,17 @@ public class QuestionCountUpTimer extends CountDownTimer {
 
 	@Override
 	public void onTick(long time) {
-		long timeElapsed = timerLength - time;
+		timeElapsed = timerLength - time;
 		timerTextView.setText(millisToTimeString(timeElapsed));
 	}
 
 	@Override
 	public void onFinish() {
 
+	}
+
+	public long getTimeElapsed() {
+		return timeElapsed;
 	}
 
 	private String millisToTimeString(long ms) {

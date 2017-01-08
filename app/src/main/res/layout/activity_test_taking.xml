@@ -30,4 +30,10 @@
 			android:text="Next Question"
 			android:onClick="nextQuestion"/>
 
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Print questions stored"
+			android:onClick="showQuestionInformation"/>
+
 </LinearLayout>

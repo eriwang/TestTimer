@@ -9,13 +9,13 @@
 		android:orientation="vertical"
 		tools:context="com.eriwang.testtimer.TestConfigurationActivity">
 
-	<EditText
+	<EditText android:id="@+id/numQuestions"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:inputType="number"
 			android:hint="@string/input_num_questions"/>
 
-	<EditText
+	<EditText android:id="@+id/timeForTest"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:inputType="time"
