@@ -19,4 +19,15 @@
 			android:layout_height="wrap_content"
 			android:textSize="50dp"/>
 
+	<TextView android:id="@+id/questionNumber"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textSize="50dp"/>
+
+	<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Next Question"
+			android:onClick="nextQuestion"/>
+
 </LinearLayout>
