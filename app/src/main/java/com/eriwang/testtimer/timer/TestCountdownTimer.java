@@ -12,8 +12,6 @@ public class TestCountdownTimer extends CountDownTimer {
 	public TestCountdownTimer(long millisInFuture, long countDownInterval, TextView _timerTextView) {
 		super(millisInFuture, countDownInterval);
 		timerTextView = _timerTextView;
-
-		timerTextView.setText("lol");
 	}
 
 	@Override

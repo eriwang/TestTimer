@@ -15,7 +15,8 @@
 				<category android:name="android.intent.category.LAUNCHER"/>
 			</intent-filter>
 		</activity>
-		<activity android:name=".TestTakingActivity">
+		<activity android:name=".TestTakingActivity"
+			android:configChanges="keyboardHidden|orientation|screenSize">
 		</activity>
 	</application>
 
